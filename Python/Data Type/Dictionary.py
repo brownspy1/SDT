@@ -15,3 +15,7 @@ for i,j in db.get(uniq_id,{}).items():
 # db.update({uniq_id:{"name":"munnah","roll":"74526"}})
 db[uniq_id].update({"name":"mahmud"}) 
 print(db.get(uniq_id,{}).values())
+# db.get(uniq_id,{}).pop("name",None)
+if uniq_id in db:
+    db[uniq_id]["name"] = None 
+print(db)
