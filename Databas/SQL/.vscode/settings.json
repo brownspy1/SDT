@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "127.0.0.1",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "brownspy1",
+            "database": "college",
+            "username": "root",
+            "connectionTimeout": 20,
+            "askForPassword": true
+        }
+    ]
+}
