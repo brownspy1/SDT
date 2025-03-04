@@ -20,3 +20,5 @@ VALUES
 (785694,"jon",20),
 (743685,"ibrahim",22);
 SELECT * FROM bpi_student;
+
+CREATE
