@@ -2,15 +2,15 @@ CREATE DATABASE IF NOT EXISTS bpi;
 
 USE bpi;
 
-CREATE TABLE IF NOT EXISTS student_details(
+CREATE TABLE IF NOT EXISTS bpi_student(
     roll INT PRIMARY KEY,
     name VARCHAR(50),
     marks INT NOT NULL,
-    grade CHAR(1),
+    grade CHAR(2),
     city VARCHAR(20)
 );
 
-INSERT INTO student_details
+INSERT INTO bpi_student
 (roll, name, marks, grade, city)
 VALUES
 (743678, 'M.Mahadi', 89, 'A', 'Barisal'),
@@ -29,3 +29,4 @@ VALUES
 (743691, 'I.Khan', 78, 'B', 'Rajshahi'),
 (743692, 'Q.Haque', 87, 'A', 'Sylhet');
 
+DROP TABLE bpi_student;
