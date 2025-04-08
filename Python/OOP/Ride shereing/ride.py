@@ -1,4 +1,4 @@
-from Users import Rider,Driver
+from Usears import Rider,Driver
 from time import time
 
 class Ride():
@@ -18,11 +18,11 @@ class Ride():
     
     def end_ride(self,Rider,Driver):
         self.end_time = time.now()
-        self.Rider.wallet -= self.cost_amount
-        self.Driver.wallet += self.cost_amount
+        Rider.wallet -= self.cost_amount
+        Driver.wallet += self.cost_amount
     
     def __repr__(self):
-        print("This is ride class d'not print it!")
+        print(f"Ride details : {self.start_location} - {self.end_location}")
 
 class Ride_request():
     def __init__(self,Rider,Destination):
@@ -37,4 +37,23 @@ class Ride_match():
         if len(self.available_Driver) > 0:
             Driver = self.available_Driver
             ride = Ride(ride_request.Rider.current_location , ride_request.end_location)
-            Driver.accept_ride()
+            Driver.accept_ride(ride)
+            return ride 
+        
+class Ride_Share:
+    ID = 1000
+    def __init__(self,Company_name):
+        self.company_Name = Company_name
+        self.riders = []
+        self.Drivers = []
+        self.rides = []
+        
+    def add_rider(self,rider):
+        self.riders.append(rider) #! add riders object in list
+        
+    def add_Driver(self,Driver):
+        self.Drivers.append(Driver) #! add Driver object in list
+        
+    def add_ride(self,Ride): #! add Rides object in list
+        self.rides.append(Ride)
+    
