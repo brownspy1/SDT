@@ -7,15 +7,15 @@
 4. encapsulation
 
 #! Classes for restaurant
-1. User #Note: Base class (ABC)
-2. Customer(User)
-3. Employee(User)
-4. Chef(Employee)
-5. Server(Employee)
-6. Manager(Employee)
-7. Cleaner(Employee) 
-8. Supplier(User)
-9. Marketer(User)
+1. User #Note: Base class (ABC) #!✔
+2. Customer(User) #!✔
+3. Employee(User) #!✔
+4. Chef(Employee) #note: Skip this class
+5. Server(Employee) #!✔
+6. Manager(Employee) #!✔
+7. Cleaner(Employee)  #note: Skip this class
+8. Supplier(User)     #note: Skip this class
+9. Marketer(User)     #note: Skip this class
 
 #! Classes for Food items
 1. FoodItem(ABC) #Note: Base class
@@ -26,6 +26,6 @@
 6. Drink(FoodItem)
 
 #TODO: Main class 
-1. Restaurant(ABC)
-2. Order()
+1. Restaurant(ABC) #!✔
+2. Order() #!✔
 """
