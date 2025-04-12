@@ -25,12 +25,13 @@ class Menu:
         self.pizzas = []
         self.burgers = []
         self.drinks = []
+        
     def add_menu_item(self,item_type,item):
-        if item_type == "pizza":
+        if item_type.lower() == "pizza":
             self.pizzas.append(item)
-        elif item_type == 'burger':
+        elif item_type.lower() == 'burger':
             self.burgers.append(item)
-        elif item_type == 'drinks':
+        elif item_type.lower() == 'drinks':
             self.drinks.append(item)
             
     def remove_pizza(self, pizza):

@@ -1,10 +1,10 @@
 """
 #Note: This is a blue print of Restaurant Management project
 
-1. inheritance
-2. polymorphism
-3. abstraction
-4. encapsulation
+1. inheritance #!✔
+2. polymorphism #!✔
+3. abstraction #!✔
+4. encapsulation #!✔
 
 #! Classes for restaurant
 1. User #Note: Base class (ABC) #!✔
@@ -18,12 +18,12 @@
 9. Marketer(User)     #note: Skip this class
 
 #! Classes for Food items
-1. FoodItem(ABC) #Note: Base class
-2. Burger(FoodItem)
-3. Pizza(FoodItem)
-4. Salad(FoodItem)
-5. Juice(FoodItem)
-6. Drink(FoodItem)
+1. FoodItem(ABC)  #Note: Base class 
+2. Burger(FoodItem) #!✔
+3. Pizza(FoodItem) #!✔
+4. Salad(FoodItem) #note: Skip this class
+5. Juice(FoodItem) #note: Skip this class
+6. Drink(FoodItem) #!✔
 
 #TODO: Main class 
 1. Restaurant(ABC) #!✔

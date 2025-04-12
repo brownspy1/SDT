@@ -1,13 +1,12 @@
 from abc import ABC,abstractmethod
+from datetime import datetime
 # Note: Base class for Users and make Customer class
 class user(ABC):
     def __init__(self,name,email,number):
         self.name = name
         self.email = email
         self.number = number
-    @abstractmethod
-    def profile(self):
-        pass
+    
 
 class Customer(user):
     def __init__(self, name, email, number, wallet):
@@ -38,7 +37,7 @@ class Customer(user):
     def TopUP(self, balance):
         if balance <= 0:
             return
-        self.__wallet += balance  
+        self.wallet += balance  
     
     def place_order(self, order):
         self.order = order
@@ -52,7 +51,7 @@ class Customer(user):
         pass
     
 class Employee(user):
-    def __init__(self, name, email, number,address,job_starting_date,department,salary):
+    def __init__(self, name, email, number,address,department,salary,job_starting_date = datetime.now()):
         super().__init__(name, email, number)
         self.address = address
         self.job_starting_date = job_starting_date
@@ -64,8 +63,9 @@ class Employee(user):
         print(f"Congratulation!\nHay Dear {self.name} Your salary: {self.salary} Received!")
 
 class Server(Employee):
-    def __init__(self, name, email, number, address, job_starting_date, department, salary):
-        super().__init__(name, email, number, address, job_starting_date, department, salary)
+    
+    def __init__(self, name, email, number, address, department, salary, job_starting_date=datetime.now()):
+        super().__init__(name, email, number, address, department, salary, job_starting_date)
         self.tips_earning = 0
     def receive_tips(self,tips):
         self.tips_earning += tips
@@ -75,5 +75,5 @@ class Server(Employee):
         pass
     
 class Manager(Employee):
-    def __init__(self, name, email, number, address, job_starting_date, department, salary):
-        super().__init__(name, email, number, address, job_starting_date, department, salary)
+    def __init__(self, name, email, number, address, department, salary, job_starting_date=datetime.now()):
+        super().__init__(name, email, number, address, department, salary, job_starting_date)

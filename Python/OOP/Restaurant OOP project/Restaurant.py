@@ -1,7 +1,7 @@
-from abc import ABC,abstractmethod
+
 #note Class for Restaurant
 
-class Restaurant(ABC):
+class Restaurant():
     def __init__(self,name,rent,menu = []):
         self.name = name 
         self.rent = rent
@@ -18,7 +18,7 @@ class Restaurant(ABC):
     def add_Employee(self,role,employee):
         if role.upper() == "SERVER":
             self.Server.append(employee)
-        elif role.upper() == "Manager":
+        elif role.upper() == "MANAGER":
             self.Manager.append(employee) 
         else:
             print("Wrong role please enter real role!")
@@ -59,8 +59,9 @@ class Restaurant(ABC):
             self.balance += order.bill
             self.revenue += order.bill
             customer.wallet -= order.bill
-            print(f"You have only {customer.wallet}")
+            print("Your Order payment Successful!")
+            print(f"You have only {customer.wallet} balance in your account")
         else:
-            print(f"You are so poor ! dont have money for pay:{order.bill} taka\nplease topUp your account !")
+            print(f"You are so poor!\ndont have money for pay:{order.bill} taka\nplease topUp your account !")
     
             
