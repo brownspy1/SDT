@@ -24,10 +24,11 @@ class School(ABC):
             self.classRoom[className].add_student(Student)
     
     def show_student(self):
-        for key,value in self.classRoom:
+        for key,value in self.classRoom.items():
             print(f"Class Room :{key}")
-            for Student in value:
+            for Student in value.student:
                 print(f"Student ID: {Student.id} \nStudent Name: {Student.name}")
+
     
 class classRoom:
     def __init__(self,name):
@@ -39,7 +40,7 @@ class classRoom:
         self.subject.append(name)
     
     def add_student(self,student):
-        student_id = f'{self.name}-{datetime.datetime.now().year()}-{len(self.student)+1}'
+        student_id = f'{self.name}-{datetime.datetime.now().year}-{len(self.student)+1}'
         student.id = student_id 
         self.student.append(student)
     

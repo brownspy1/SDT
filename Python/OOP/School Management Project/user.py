@@ -13,17 +13,17 @@ class student(user):
         self.subject_grad = {}
         self.grad = None
     
-    def final_grad():
+    def final_grad(self):
         pass
     
     
     #note: Using Getter and setter
     @property
     def id(self):
-        return self.__id 
+        return self.__id
     @id.setter
     def id(self,value):
-        id = value
+        self.__id = value
         
 class Teacher(user):
     def __init__(self, name):
