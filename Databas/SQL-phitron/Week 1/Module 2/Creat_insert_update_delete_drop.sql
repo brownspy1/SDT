@@ -20,6 +20,15 @@ INSERT INTO student
 (roll,name,marks)VALUES
 (0002,"M.Mahadi",70);
 
+-- Update student 2
+SET SQL_SAFE_UPDATES = 0;
+UPDATE student SET name = "Abdulla al mahir" WHERE roll = 1;
+SET SQL_SAFE_UPDATES = 1;
+
+-- DELETE user 2
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM student WHERE roll = 2;
+SET SQL_SAFE_UPDATES = 1;
 
 -- show all data from student tabile
 SELECT * FROM student;
