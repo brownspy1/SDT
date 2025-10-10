@@ -74,6 +74,21 @@
             "database": "phitron_sdt",
             "username": "root",
             "password": ""
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "PHITRON_SDT",
+            "database": "phitron_sdt",
+            "username": "root",
+            "askForPassword": true
         }
     ]
 }
