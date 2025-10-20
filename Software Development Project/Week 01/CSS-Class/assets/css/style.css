@@ -1,0 +1,67 @@
+.titel{
+    color: rgb(255, 0, 0);
+}
+
+#titel{
+    color: blueviolet;
+}
+
+.Box{
+    width: 200px;
+    background-color: rgb(6, 143, 255);
+    text-align: center;
+    padding: 10px;
+    font-size: larger;
+    font-style: italic;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffd900;
+}
+
+.all_box{
+    margin-top: 10px;
+    border: 2px solid rgb(0, 255, 13);
+    background-color:  rgb(0, 255, 13);
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    
+}
+.box2{
+    width: 200px;
+    height: 200px;
+}
+.box3{
+    width: 200px;
+    height: 200px;
+}
+.read{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    background-color: red;
+    border-radius: 99px;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.container{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+}
+
+.lin1{
+    height: 200px;
+    width: 200px;
+    border: 2px dotted rebeccapurple;
+}
+
+.lin2{
+    height: 200px;
+    width: 200px;
+    border: 2px dotted rgb(255, 60, 0);
+}
