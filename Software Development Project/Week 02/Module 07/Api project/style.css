@@ -1,0 +1,12 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.titel{
+    color: rgb(255, 123, 0);
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+
+}

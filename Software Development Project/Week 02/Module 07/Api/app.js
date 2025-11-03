@@ -1,7 +1,7 @@
 fetch("https://jsonplaceholder.typicode.com/users")
 .then(response => response.json())
 .then(data => {
-    console.log(data);
+    getUser(data);
     
 }).catch((Error) => {
     console.log(Error);
@@ -16,10 +16,13 @@ const getUser = (users_data)=>{
         div.classList.add("user");
 
         div.innerHTML = `
-              <h3>Titel</h3>
-              <p>para</p>
+              <h3>${user.name}</h3>
+              <p>${user.email}</p>
               <button>details</button>
         `;
+        container.appendChild(div);
+        console.log(user);
         
+
     });
 }
