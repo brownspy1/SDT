@@ -69,3 +69,7 @@ def contact(request):
 </body>
 </html>
 ''')
+
+
+def show_task(request):
+    return HttpResponse("Task page")
