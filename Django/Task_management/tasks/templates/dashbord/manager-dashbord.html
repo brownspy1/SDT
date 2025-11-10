@@ -1,0 +1,114 @@
+ {% extends "dashbord/dashbord.html" %}
+ {% block titel %}Manager Dashbord{% endblock titel %}
+ {% block table %}
+ {% comment %} start tabile section {% endcomment %}
+        <div class="bg-white rounded-xl shadow-md ">
+
+            <div class="grid grid-cols-4 border-b border-gray-200 p-4 text-md text-gray-500">
+                <div class="">TASK TITEL</div>
+                <div class="">PRIORITY</div>
+                <div class="">TEAM</div>
+                <div class="">CREATED AT</div>
+            </div>
+            {% comment %} Task items {% endcomment %}
+
+            {% comment %} items-1 {% endcomment %}
+            <div class="divide-y divide-gray-200">
+                <div class="grid grid-cols-4 border-gray-200 p-4 text-md text-gray-500">
+                    <div class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-green-500 rounded-full">
+                        </div>
+                        <div class="">
+                            <span>TEST LOW TASK</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        <span class="px-3 pb-1 bg-green-50 text-green-500 rounded-full test-sm">Low</span>
+                    </div>
+                    <div class="">
+                        <div class="flex -space-x-2">
+                            <div
+                                class="w-8 h-8 text-sm bg-blue-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                CA</div>
+                            <div
+                                class="w-8 h-8 text-sm bg-blue-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                R</div>
+                            <div
+                                class="w-8 h-8 text-sm bg-blue-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                UM</div>
+                        </div>
+                    </div>
+                    <div class=""><span class="text-gray-500"> 5 months ago.</span></div>
+                </div>
+            </div>
+
+
+            {% comment %} items-2 {% endcomment %}
+            <div class="divide-y divide-gray-200">
+                <div class="grid grid-cols-4 border-gray-200 p-4 text-md text-gray-500">
+                    <div class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-yellow-500 rounded-full">
+                        </div>
+                        <div class="">
+                            <span>TEST NORMAL TASK</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        <span class="px-3 pb-1 bg-yellow-50 text-yellow-600 rounded-full test-sm">Normal</span>
+                    </div>
+                    <div class="">
+                        <div class="flex -space-x-2">
+                            <div
+                                class="w-8 h-8 text-sm bg-blue-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                AL</div>
+                            <div
+                                class="w-8 h-8 text-sm bg-blue-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                NK</div>
+                            <div
+                                class="w-8 h-8 text-sm bg-blue-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                SF</div>
+                        </div>
+                    </div>
+                    <div class=""><span class="text-gray-500"> 5 months ago.</span></div>
+                </div>
+            </div>
+
+
+
+            {% comment %} items-3 {% endcomment %}
+            <div class="divide-y divide-gray-200">
+                <div class="grid grid-cols-4 border-gray-200 p-4 text-md text-gray-500">
+                    <div class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-red-500 rounded-full">
+                        </div>
+                        <div class="">
+                            <span>TEST LOW TASK</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        <span class="px-3 pb-1 bg-red-50 text-red-600 rounded-full test-sm">High</span>
+                    </div>
+                    <div class="">
+                        <div class="flex -space-x-2">
+                            <div
+                                class="w-8 h-8 text-sm bg-blue-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                bb</div>
+                            <div
+                                class="w-8 h-8 text-sm bg-blue-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                RK</div>
+                            <div
+                                class="w-8 h-8 text-sm bg-blue-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                As</div>
+                            <div
+                                class="w-8 h-8 text-sm bg-blue-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                MM</div>
+                        </div>
+                    </div>
+                    <div class=""><span class="text-gray-500">6 months ago.</span></div>
+                </div>
+            </div>
+            {% comment %} task end here {% endcomment %}
+
+        </div>
+        {% comment %} tabile edn here {% endcomment %}
+        {% endblock table %}

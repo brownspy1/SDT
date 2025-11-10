@@ -1,0 +1,157 @@
+ {% extends "dashbord/dashbord.html" %}
+ {% block titel %}User Dashbord{% endblock titel %}
+ {% block table %}
+
+{% comment %} starting the 2 section all and todays tasks  {% endcomment %}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+             {% comment %} left section  {% endcomment %}
+            <div class=" rounded-xl bg-white shadow-md p-4">
+                <h1 class="text-xl font-bold">Today's Tasks</h1>
+                
+                {% comment %} start dayli tasks {% endcomment %}
+                <div>
+                    {% comment %} task 01 {% endcomment %}
+                    <div class="p-4 flex justify-between">
+                        <div class="flex  items-center gap-2">
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                            <span>Complete project proposal</span>
+                        </div>
+                        <span class="text-gray-500">High</span>
+                    </div>
+
+                    {% comment %} task 02 {% endcomment %}
+                    <div class="p-4 flex justify-between">
+                        <div class="flex  items-center gap-2">
+                            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                            <span>Complete project proposal</span>
+                        </div>
+                        <span class="text-gray-500">Normal</span>
+                    </div>
+
+                    {% comment %} task 03 {% endcomment %}
+                    <div class="p-4 flex justify-between">
+                        <div class="flex  items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                            <span>Complete project proposal</span>
+                        </div>
+                        <span class="text-gray-500">Low</span>
+                    </div>
+                </div>
+
+            </div>
+            {% comment %} Right section {% endcomment %}
+            <div class="rounded-xl bg-white shadow-md p-4">
+                <h1 class="text-xl font-bold ">All Tasks</h1>
+                {% comment %} start tabile section {% endcomment %}
+                <div class="">
+
+                    <div class="grid grid-cols-4  p-4 text-md text-gray-500">
+                        <div class="">TASK TITEL</div>
+                        <div class="">PRIORITY</div>
+                        <div class="">TEAM</div>
+                        <div class="">CREATED AT</div>
+                    </div>
+                    {% comment %} Task items {% endcomment %}
+
+                    {% comment %} items-1 {% endcomment %}
+                    <div class="">
+                        <div class="grid grid-cols-4 border-gray-200 p-4 text-md text-gray-500">
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 bg-green-500 rounded-full">
+                                </div>
+                                <div class="">
+                                    <span>TEST LOW TASK</span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="px-3 pb-1 bg-green-50 text-green-500 rounded-full test-sm">Low</span>
+                            </div>
+                            <div class="">
+                                <div class="flex -space-x-2">
+                                    <div
+                                        class="w-8 h-8 text-sm bg-orange-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                        CA</div>
+                                    <div
+                                        class="w-8 h-8 text-sm bg-violet-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                        R</div>
+                                    <div
+                                        class="w-8 h-8 text-sm bg-amber-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                        UM</div>
+                                </div>
+                            </div>
+                            <div class=""><span class="text-gray-500"> 5 months ago.</span></div>
+                        </div>
+                    </div>
+
+
+                    {% comment %} items-2 {% endcomment %}
+                    <div class="divide-y divide-gray-200">
+                        <div class="grid grid-cols-4 border-gray-200 p-4 text-md text-gray-500">
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 bg-yellow-500 rounded-full">
+                                </div>
+                                <div class="">
+                                    <span>TEST NORMAL TASK</span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="px-3 pb-1 bg-yellow-50 text-yellow-600 rounded-full test-sm">Normal</span>
+                            </div>
+                            <div class="">
+                                <div class="flex -space-x-2">
+                                    <div
+                                        class="w-8 h-8 text-sm bg-blue-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                        AL</div>
+                                    <div
+                                        class="w-8 h-8 text-sm bg-green-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                        NK</div>
+                                    <div
+                                        class="w-8 h-8 text-sm bg-yellow-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                        SF</div>
+                                </div>
+                            </div>
+                            <div class=""><span class="text-gray-500"> 5 months ago.</span></div>
+                        </div>
+                    </div>
+
+
+
+                    {% comment %} items-3 {% endcomment %}
+                    <div class="divide-y divide-gray-200">
+                        <div class="grid grid-cols-4 border-gray-200 p-4 text-md text-gray-500">
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 bg-red-500 rounded-full">
+                                </div>
+                                <div class="">
+                                    <span>TEST LOW TASK</span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <span class="px-3 pb-1 bg-red-50 text-red-600 rounded-full test-sm">High</span>
+                            </div>
+                            <div class="">
+                                <div class="flex -space-x-2">
+                                    <div
+                                        class="w-8 h-8 text-sm bg-blue-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                        bb</div>
+                                    <div
+                                        class="w-8 h-8 text-sm bg-green-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                        RK</div>
+                                    <div
+                                        class="w-8 h-8 text-sm bg-orange-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                        As</div>
+                                    <div
+                                        class="w-8 h-8 text-sm bg-violet-500 text-white rounded-full flex items-center justify-center border-2 border-white">
+                                        MM</div>
+                                </div>
+                            </div>
+                            <div class=""><span class="text-gray-500">6 months ago.</span></div>
+                        </div>
+                    </div>
+                    {% comment %} task end here {% endcomment %}
+
+                </div>
+                {% comment %} tabile edn here {% endcomment %}
+            </div>
+        </div>
+        {% endblock table %}

@@ -1,5 +1,7 @@
 from django.urls import path
-from tasks.views import show_task
+from tasks.views import manager_dashbord,user_dashbord,test
 urlpatterns = [
-    path("show_task/",show_task)
+    path("manager/",manager_dashbord),
+    path("user/",user_dashbord),
+    path("test/",test)
 ]
