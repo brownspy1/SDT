@@ -8,4 +8,7 @@ def manager_dashbord(request):
 def user_dashbord(request):
     return render(request,'dashbord/user-dashbord.html')
 def test(request):
-    return render(request,'test.html')
+    context = {"names":['Mahadi','Mahdir'],
+               "age":[20,6]}
+    
+    return render(request,'test.html',context)
