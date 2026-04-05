@@ -1,0 +1,41 @@
+
+.box1{
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgb(255, 0, 55);
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+.circel{
+    height: 50px;
+    width: 50px;
+    border-radius: 60px;
+    background-color: blue;
+    top: -20px;
+    left: -20px;
+    position: absolute;
+}
+.boxa{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    margin-bottom:5px;
+}
+.boxb{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 0, 221);
+    margin-bottom:5px;
+}
+.boxc{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 217, 0);
+    margin-bottom:5px;
+}
+.container{
+ display: flex;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+}
