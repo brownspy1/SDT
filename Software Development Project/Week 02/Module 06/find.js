@@ -19,3 +19,4 @@ const mobile = [
 
 const result = mobile.find(mobile=>mobile.id==1);
 console.log(result);
+

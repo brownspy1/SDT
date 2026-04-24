@@ -1,10 +1,10 @@
-var listofgandu = ["Abujar","Rakib","arafat"];
+function addition(a){
+    var sum = 0;
+    for (let i = 0; i < a.length; i++) {
+        sum += a[i];
+    }
+    return sum;
+}
 
-listofgandu.push("Rahim");
-console.log(listofgandu);
-listofgandu.pop();
-console.log(listofgandu);
-listofgandu.unshift("Karim");
-console.log(listofgandu);
-listofgandu.shift();
-console.log(listofgandu);
+var list = [1,2,3,4,5];
+console.log(addition(list));

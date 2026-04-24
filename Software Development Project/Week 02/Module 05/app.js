@@ -1,2 +1,2 @@
-var mahadi = 'My name is mahadi';
+var mahadi = {value: 211.32};
 console.log(typeof mahadi);

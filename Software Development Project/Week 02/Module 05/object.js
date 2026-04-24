@@ -8,5 +8,6 @@ var my_details = {
         Hardest:"SUYGQDBVHAsaijfdbjdnasjbinsijbBSIJAJB*HSBAIJDadbainbIJABIBSIHABsijxaBhi"
     }
 };
-
-console.log(my_details.tag.normal);
+const keys = Object.keys(my_details);
+const values = Object.values(my_details);
+console.log(keys + ": " + values);
