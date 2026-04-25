@@ -5,7 +5,7 @@ for(var i = 0; i < gandus.length; i++){
 
     if (gandu == "david") {
         console.log("Yes Sir");
-        continue;
+        continue; 
     }
     
 }
