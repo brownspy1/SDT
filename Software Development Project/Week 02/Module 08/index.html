@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- serceh and button impliment -->
+  <section class="d-flex justify-content-center mt-5 gap-3">
+    <form action="">
+      <input type="text" id="serceh_text" class="input-group-sm rounded-2 border-1 w-50" placeholder="Seaceh for Drink..." required>
+      <button class="btn-primary btn" type="submit">Search</button>
+    </form>
+  </section>
+
+  <!-- cart option and drink show case -->
+  <section class="conatiiner_card_apis d-flex justify-content-around flex-wrap">
+    <!-- Drink show case -->
+    <div class="left_section_Drink ms-5 mt-3 w-50 h-100">
+      <h2 class="">Drinks</h2>
+      <div class="drinks_api">
+
+      </div>
+    </div>
+    <!-- Cart details and count -->
+    <div class="right_cart_section me-lg-5 me-md-5 mt-3 ">
+      <div class="card shadow-sm cart_card d-flex flex-column ">
+        <h5 class="card-title text-start m-0 p-2"> Total Card : <span>0</span></h5>
+
+      </div>
+    </div>
+  </section>
+
+
+  <script src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

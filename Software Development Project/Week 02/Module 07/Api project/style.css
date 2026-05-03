@@ -10,3 +10,66 @@
     font-weight: 900;
 
 }
+
+
+#mealname{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 10px #1b1a1a;
+
+}
+.searce_container{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 20px;
+}
+#search{
+    width: 80px;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(250, 217, 0);
+    
+}
+.racipiCard{
+    padding: 10px;
+    background-color: rgb(202, 213, 223);
+    border-radius: 16px;
+}
+.racipy_image{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.Foods-recipi-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.notfound{
+    font-size: 30px;
+    color: rgb(71, 117, 157);
+    font-weight: 800;
+}
+.details_racipi{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.details_card{
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 16px;
+}
+.details_image{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
