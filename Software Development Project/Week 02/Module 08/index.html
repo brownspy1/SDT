@@ -11,29 +11,54 @@
 </head>
 
 <body>
-
-  <!-- serceh and button impliment -->
+  <!-- Modal section -->
+  <div class="modal fade" id="drinkModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalName">Drink Details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- serceh and button implement -->
   <section class="d-flex justify-content-center mt-5 gap-3">
-    <form action="">
-      <input type="text" id="serceh_text" class="input-group-sm rounded-2 border-1 w-50" placeholder="Seaceh for Drink..." required>
-      <button class="btn-primary btn" type="submit">Search</button>
-    </form>
+
+    <input type="text" id="serceh_text" class="input-group-sm rounded-2 border-1 w-50" placeholder="Seaceh for Drink..."
+      required>
+    <button class="btn-primary btn" type="submit" onclick="searce_hit()">Search</button>
+
   </section>
 
   <!-- cart option and drink show case -->
   <section class="conatiiner_card_apis d-flex justify-content-around flex-wrap">
     <!-- Drink show case -->
-    <div class="left_section_Drink ms-5 mt-3 w-50 h-100">
+    <div class="left_section_Drink ms-5 mt-3  ">
       <h2 class="">Drinks</h2>
-      <div class="drinks_api">
+      <h3 id="not_faceh" class="d-none text-danger">Data not found!</h3>
+      <div class="drinks_api d-flex flex-wrap gap-3 " id="drinks_api">
 
       </div>
     </div>
     <!-- Cart details and count -->
     <div class="right_cart_section me-lg-5 me-md-5 mt-3 ">
       <div class="card shadow-sm cart_card d-flex flex-column ">
-        <h5 class="card-title text-start m-0 p-2"> Total Card : <span>0</span></h5>
-
+        <h5 class="card-title text-start m-0 p-2"> Total Card : <span id="cart_count">0</span></h5>
+        <div class="titels-cart d-flex  p-2 m-0">
+          <p style="width: 20%;" >SL</p>
+          <p style="width: 40%;">Img</p>
+          <p style="width: 40%;">Name</p>
+        </div>
+        <div class="cart-item_container m-0 p-2 text-start " id="carts-values">
+          
+        </div>
       </div>
     </div>
   </section>
@@ -46,3 +71,7 @@
 </body>
 
 </html>
+
+
+
+

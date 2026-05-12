@@ -8,3 +8,54 @@ body{
     height: auto !important;
     min-height: 100px;
 }
+.image{
+    height: auto;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+}
+#modalBody{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.left_section_Drink{
+    width: 65%;
+}
+.cart-image{
+    
+    height: 50px;
+    width: 50px;
+    border-radius: 99px;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.carts-tems-bg{
+    background-color: beige;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.text1{
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-left: 10px;
+}
+.bg-items{
+    background-color: bisque;
+    border-radius: 5px;
+    text-align: center;
+}
+.ul-item{
+    text-align: center;
+    align-items: center;
+}
+.ul-cont{
+    align-items: center;
+    justify-content: center;
+}

@@ -4,6 +4,7 @@ const getracipis = () => {
     console.log("This is click");
     const food_container = document.getElementById("racipis");
     food_container.replaceChildren();
+    
     const user_input = document.getElementById("mealname");
     // const name = user_input.value;
     const name = user_input.value;
@@ -12,6 +13,7 @@ const getracipis = () => {
             .then(res => res.json())
             .then(data => {
                 data.meals.forEach(recipy => {
+                    Details.replaceChildren();
                     const div = document.createElement("div");
                     const name = recipy.strMeal;
                     const id = recipy.idMeal;
