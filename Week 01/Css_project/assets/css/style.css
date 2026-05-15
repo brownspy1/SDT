@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+li{
+    list-style: none;
+    margin-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: aqua;
+    transition: .5s;
+}
+.menu_container{
+    display: flex;
+    align-items: center;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 5px;
+}
+.banar-container{
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+}
+.left-banar{
+    width: 450px;
+   
+}
+.titel{
+     text-transform: uppercase;
+}
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn{
+    padding: 15px 30px;
+    margin-top: 5px;
+    font-size: 15px;
+    border-style: none;
+}
+.hire_button{
+    background-color: #383bdf;
+    color: aliceblue;
+}
+.project_button{
+    background-color:#1369c4;
+    color: aliceblue;
+}

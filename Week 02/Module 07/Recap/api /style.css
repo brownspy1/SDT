@@ -1,0 +1,25 @@
+#users{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.user-card{
+    padding: 30px;
+    margin: 10px;
+    border: 1px solid sandybrown;
+    border-radius: 20px;
+    width: 200px;
+    
+    align-items: center;
+}
+.defult-image{
+    border-radius: 99px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+}

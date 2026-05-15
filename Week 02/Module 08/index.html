@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Modal section -->
+  <div class="modal fade" id="drinkModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalName">Drink Details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- serceh and button implement -->
+  <section class="d-flex justify-content-center mt-5 gap-3">
+
+    <input type="text" id="serceh_text" class="input-group-sm rounded-2 border-1 w-50" placeholder="Seaceh for Drink..."
+      required>
+    <button class="btn-primary btn" type="submit" onclick="searce_hit()">Search</button>
+
+  </section>
+
+  <!-- cart option and drink show case -->
+  <section class="conatiiner_card_apis d-flex justify-content-around flex-wrap">
+    <!-- Drink show case -->
+    <div class="left_section_Drink ms-5 mt-3  ">
+      <h2 class="">Drinks</h2>
+      <h3 id="not_faceh" class="d-none text-danger">Data not found!</h3>
+      <div class="drinks_api d-flex flex-wrap gap-3 " id="drinks_api">
+
+      </div>
+    </div>
+    <!-- Cart details and count -->
+    <div class="right_cart_section me-lg-5 me-md-5 mt-3 ">
+      <div class="card shadow-sm cart_card d-flex flex-column ">
+        <h5 class="card-title text-start m-0 p-2"> Total Card : <span id="cart_count">0</span></h5>
+        <div class="titels-cart d-flex  p-2 m-0">
+          <p style="width: 20%;" >SL</p>
+          <p style="width: 40%;">Img</p>
+          <p style="width: 40%;">Name</p>
+        </div>
+        <div class="cart-item_container m-0 p-2 text-start " id="carts-values">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+

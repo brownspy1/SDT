@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/Week 01/HTML/Tabile.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/Week%2001/HTML/%5CWeek%2001%5CHTML%5CForm.html"
+        }
+    ]
+}
